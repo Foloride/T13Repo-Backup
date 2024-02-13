@@ -1,2 +1,2 @@
 # T13Repo
- T13 Repo
+Ruander Frontend + Webfejlesztő kurzus gyakorlatok (Team 13)
