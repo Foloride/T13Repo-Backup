@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vízszintes animált flex menü minta</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        @keyframes atszinezo {
+            from {
+                /*Üresen hagyhatjuk ha akarjuk, mivel ezt nem írja a feladat.*/
+            }
+
+            to {
+                background-color: #EE5A24;
+                border: 3px solid black;
+            }
+        }
+
+        body {
+            background-image: linear-gradient(to right, orange, red);
+        }
+
+        #tartalom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        a {
+            background-color: #ff9f43;
+            color: white;
+            font-size: 18px;
+            border: 3px solid gray;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            font-weight: bold;
+            width: 300px;
+        }
+
+        a:hover {
+            animation-name: atszinezo;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tartalom">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML dokumentációk</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS dokumentációk</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+    </div>
+</body>
+
+</html>

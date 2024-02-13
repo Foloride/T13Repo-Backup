@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    margin: 0px auto;
+    text-align: center;
+}
+
+form{
+    color:#eee;
+    width: 300px;
+    background-color: #15172b;
+    margin: 0px auto;
+    padding: 30px 10px;
+    border: 1px solid white;
+}
+
+input, input:empty{
+    margin: 5px auto;
+    width: 200px;
+    border: 1px solid red;
+    background-color: #303245;
+    color: #eee;
+    display: block;
+}
+
+input:focus{
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+input:valid{
+    border: 1px solid black;
+}

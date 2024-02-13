@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feliratkozás</title>
+    </head>
+    <body>
+        <form action="regisztracio.php" method="post">
+            <input type="text" required placeholder="Teljes név"><br>
+            <input type="email" required placeholder="E-mail cím"><br>
+            <input type="text" required placeholder="Csatorna név"><br>
+            <textarea type="text" required placeholder="Csatorna leírás" cols="20" rows="5"></textarea><br>
+            <select>
+                <option value="travel">Travel</option>
+                <option value="film">Film</option>
+                <option value="beauty">Beauty</option>
+                <option value="podcast">Podcast</option>
+                <option value="vlogger">Vlogger</option>
+                <option value="hardver">Hardver</option>
+                <option value="szoftver">Szoftver</option>
+                <option value="prog">Programozás</option>
+            </select><br>
+            <button type="submit" value>Csatorna regisztráció</button>
+        </form>
+    </body>
+</html>

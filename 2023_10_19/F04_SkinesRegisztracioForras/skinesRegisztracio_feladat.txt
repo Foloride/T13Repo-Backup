@@ -1,0 +1,17 @@
+Készítse el az alábbi Űrlap felületet, a mellékelt minták alapján, mely egy "alap" regisztráció elemeit tartalmazza.
+
+Támpontok amik nem láthat:
+Az első három mező szöveg típusú
+A jelszó mezők mindkettő jelszó típusú, az e-mail típusú mezők pedig logikusan email-nek megfelelőek.
+A mintaszövegek a képeken láthatóan készítse el.
+Az összes mező kitöltése kötelező
+Próbálja meg, a különböző mezőket a megfelelő HTML form mintával ellátni, annak "védelmében".
+
+Segédlet a CSS kódhoz:
+A teljes oldal háttérszíne:fekete
+A középre igazított tartalom mező háttérszíne: #15172b; betűszíne #eee;
+Az input mezők háttérszíne: #303245; betűszíne: #eee;
+
+A fókuszban lévő elem a mintában látható tulajdonságokat kap(szegély, betűvastagság)
+A hibás adattal rendelkező mezők a mintának megfelelő tulajdonságokat kapnak(szegély)
+a megfelelő adattal rendelkező elemek, egyszerű fekete szegélyt kapnak

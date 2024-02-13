@@ -1,0 +1,17 @@
+.igazito {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    border-bottom: 5px solid #4682B4;
+}
+
+p{
+    text-indent: 10px;
+    background-color: rgba(0, 139, 139, 0.2);
+    border-left: 10px ridge steelblue;
+}

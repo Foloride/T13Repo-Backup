@@ -1,0 +1,13 @@
+Készítse el a mintákban látható rácsszerkezetet, 
+ügyeljen arra, hogy a különböző ablakméretektől függően azok szerkezete responsivan változzon meg
+A színeket a mintán láthatja, ezekehez hozzon létre saját osztályokat az oldal fej részében.
+
+xl méret esetén a konténer elemek 3 oszlopban(lásd minta) 
+sima-dupla-sima felállásban, középső elem 2szer olyan széles mint a szélsők
+
+lg méret esetén a konténer elemek 3 oszlopban(lásd minta)
+a középső elem 4 szer olyan széles mint a szélsők
+
+md méret esetén a konténer elemek 1 oszlopban
+
+Megjegyzés: a konténer elemek magassága: 50vh;

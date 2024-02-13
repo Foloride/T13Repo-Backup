@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.foto {
+    float: right;
+    width: 200px;
+    margin-left: 25px;
+    border: 1px solid darkgray;
+}
+.foto img {
+    width: 100%;
+}
+.foto .kepalairas{
+    text-align: center;
+    font-style: italic;
+}
+
+.container {
+    margin: 0 3px;
+    padding: 0 10px 10px 10px;
+}
+
+h2, nav {
+    margin: 10px -10px 10px -10px;
+    padding: 15px 0 15px 15px;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+img {
+    max-height: 400px;
+}
+
+dd {
+    margin-left: 50px;
+}
+
+a {
+    color:orange;
+}
+
+a:hover {
+    text-decoration: none;  
+    font-weight: bold;
+    color:orange;
+}
+
+.kiemeles {
+    font-size: larger;
+}

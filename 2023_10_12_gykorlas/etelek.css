@@ -1,0 +1,15 @@
+.uppercase{
+    list-style-type: upper-alpha;
+}
+
+.lowercase{
+    list-style-type: lower-alpha;
+}
+
+.upper-roman {
+    list-style-type: upper-roman;
+}
+
+.lower-roman {
+    list-style-type: lower-roman;
+}

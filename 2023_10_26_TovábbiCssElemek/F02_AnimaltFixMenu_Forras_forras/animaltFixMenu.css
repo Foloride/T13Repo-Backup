@@ -1,0 +1,30 @@
+body{
+    background-image: url("hatter.jpg");
+    background-size: cover;
+}
+
+.menuButton{
+    position: relative;
+    width: 300px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: black 5px 5px 2px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    margin: 40px;
+    left: -250px;
+}
+
+img{
+    position: relative;
+    height: 80px;
+    float: right;
+    margin-right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

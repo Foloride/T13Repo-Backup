@@ -1,0 +1,23 @@
+Készítse el a mintában látható form szerkezetet, a minták képei illetve a mellékelt dokumentumban található leírás alapján
+
+A legördülő lista elemeit a második mintából kiolvashatja.
+Minden minta elem a címkéjükben található típusú input típust kapta.
+
+A bootstrapen kívüli módosítások a következők
+Az oldal összes elemének betűszíne fehér, kivéve a input mező alatti szövegek.
+Az oldal összes szövege félkövér betűstílusú
+A weboldal háttere színátmenetes (black-dodgerblue-black)
+
+A form egy konténer elemben van, melynek szélessége 500pixel és a weboldal közepén helyezkedik el.
+A konténer elem belső eltartása 20 pixel, háttérszíne pedig 80%-os fekete
+Az elem sarkai 10pixel szélességben le vannak kerekítve
+Valamint a felső résztől el van tolva 50 pixel távolságra, eredeti helyétől.
+
+
+A gomb formázását írja felül, kapjon egyszerű fekete szegélyt, illetve árnyékot!
+
+
+Extra: 
+Tegye kötelezővé az elemek kitöltését
+Próbálja meg elkészíteni a validálást a formhoz(Bootstrap javascript kód beillesztésével)
+Ha nem megfelelő az elem, akkor a "Hibás adat" szöveg jelenjen meg.

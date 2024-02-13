@@ -1,0 +1,6 @@
+﻿Hozd létre a mintában található CSS elemek szerkezetét, úgy hogy használod az relavív, abszolút és fixed tulajdonságokat, és számozd is meg őket, szintén a minta szerint
+A belső elemek abszolútok, a külső elemek pedig fixed tulajdonsággal rendelkeznek.
+
+Középen lévő div szélessége 400px x 400px
+Az összes többi div elem mérete 100px x 100px
+színük a mintában szereplő legyen.

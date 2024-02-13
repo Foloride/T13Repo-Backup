@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap regisztráció minta feladat megoldása</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            color: white;
+            font-weight: bold;
+            background-image: linear-gradient(to left, black, dodgerblue, black);
+        }
+
+        .container {
+            width: 500px;
+            margin: 0px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            position: relative;
+            top: 50px;
+        }
+
+        .btn-primary {
+            border: 1px solid black;
+            box-shadow: 3px 3px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tanfolyam regisztráció</h1>
+        <form action="#" method="post">
+            <div class="row">
+                <!--Vezeték és keresztnév mezők egymás mellett-->
+                <div class="col">
+                    <div class="form-group">
+                        <label for="veznev">Vezeték név:</label>
+                        <input type="text" class="form-control" id="veznev">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="kernev">Kereszt név:</label>
+                        <input type="text" class="form-control" id="kernev">
+                    </div>
+                </div>
+            </div>
+            <!--Felhasználói név mező-->
+            <div class="form-group">
+                <label for="fnev">Felhasználói név:</label>
+                <input type="text" class="form-control" id="fnev">
+                <small class="text-secondary form-text">Beceneve, mely mások számára is látható</small>
+            </div>
+            <!--Jelszó és jelszó ismét mező-->
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="pass1">Jelszó:</label>
+                        <input type="password" class="form-control" id="pass1">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="pass2">Jelszó ismét:</label>
+                        <input type="password" class="form-control" id="pass2">
+                    </div>
+                </div>
+            </div>
+
+            <!--E-mail cím mező-->
+            <div class="form-group">
+                <label for="email">E-mail cím:</label>
+                <input type="email" class="form-control" id="email">
+                <small class="text-secondary form-text">Ide továbbítjuk a legfontosabb tanfolyam információkat
+                    önnek</small>
+            </div>
+
+            <!--Telefonszám mező-->
+            <div class="form-group">
+                <label for="tel">Telefonszám:</label>
+                <input type="tel" class="form-control" id="tel">
+                <small class="text-secondary form-text">Ha szeretne akár azonnal értesülni a legfontosabb
+                    hírekről</small>
+            </div>
+
+            <div class="form-group">
+                <label for="tipus">Tanfolyam típusa</label>
+                <select id="tipus" class="form-control">
+                    <option selected="selected">Webfejlesztő</option>
+                    <option>Junior frontend fejlesztő</option>
+                    <option>MySQL intenzív tanfolyam</option>
+                    <option>C# alapismeretek</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="box" class="form-check-input">
+                <label for="box" class="form-check-label">Adatvédelmi nyilatkozat elfogadása</label>
+            </div>
+            <button class="btn btn-primary form-control">Regisztrálok</button>
+
+    </div>
+</body>
+
+</html>

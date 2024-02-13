@@ -1,0 +1,18 @@
+A menük gombjai az alábbi linkekre mutasson, melyek, ÚJ ablakban! nyíljanak meg:
+
+HTML -> https://www.w3schools.com/html/default.asp
+CSS - > https://www.w3schools.com/css/default.asp
+JavaScript -> https://www.w3schools.com/js/default.asp
+
+
+A gombok szélessége 300px
+a gombok lekerekítettek, van szegélyük és árnyékuk
+
+A gombok szövege félkövér, és 30pixel méretű
+
+a beúszás animáció 2mp alatt hajtódik végre
+
+
+HOVER effektezett esetén egy beúszás animáció hajtódjon végre, és az elem maradjon is abban a pozícióban, amíg az egér el nem távolódik az adott elem felől
+
+A kezdeti állapotról, és egy gomb esetén a végállapotról is találhatsz mintaképet.

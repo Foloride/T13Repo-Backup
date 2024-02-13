@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    margin: 0px auto;
+    background-color: black;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.buttons {
+    display: inline-block;
+    position: absolute;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    background-color: #222222;
+    padding-top: 10px;
+}
+
+.button:hover{
+    background-color: #222266;
+    font-weight: bold;
+}
+
+.button:active{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+img{
+    height: 40px;
+    margin: 10px;
+    display: inline-block;
+}

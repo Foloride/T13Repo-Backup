@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+        <script>
+            function getRandomNumberArray(length) {
+                let arr = [];
+                for (let i = 0; i < length; i++) {
+                    arr.push(Math.round(Math.random() * 30));
+                }
+                return arr;
+            }
+
+            let arr1 = getRandomNumberArray(10);
+            let arr2 = getRandomNumberArray(10);
+
+
+            function union(arr1, arr2) {
+                let result = [];
+                for (const elem of arr1) {
+                    if (!result.includes(elem)) {
+                        result.push(elem);
+                    }
+                }
+                for (const elem of arr2) {
+                    if (!result.includes(elem)) {
+                        result.push(elem);
+                    }
+                }
+                return result;
+            }
+
+            function intersection(arr1, arr2) {
+                let result = [];
+                let shorterArr = arr1.length > arr2.length ? arr2 : arr1;
+                let longerArr = arr1.length > arr2.length ? arr1 : arr2;
+                for (const elem of shorterArr) {
+                    if (longerArr.includes(elem) && !result.includes(elem)) {
+                        result.push(elem);
+                    }
+                }
+                return result;
+            }
+
+            function difference(arr1, arr2) {
+                let result = [];
+                let intersectionArr = intersection(arr1, arr2);
+                for (const elem of arr1) {
+                    if (!intersectionArr.includes(elem) && !result.includes(elem)) {
+                        result.push(elem);
+                    }
+                }
+                for (const elem of arr2) {
+                    if (!intersectionArr.includes(elem) && !result.includes(elem)) {
+                        result.push(elem);
+                    }
+                }
+                return result;
+            }
+
+            document.write(`Array1: ${arr1}<br>Array2: ${arr2}<br>Union: ${union(arr1, arr2)}<br>Intersection: ${intersection(arr1, arr2)}<br>Diff: ${difference(arr1, arr2)}`)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

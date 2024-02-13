@@ -1,0 +1,34 @@
+Hozz létre egy linket, mely a következő tulajdonságokkal rendelkezik
+
+A link tartalma: Ruander Oktatási Kft.
+A link az alábbi címre mutasson: 
+A link új ablakban nyíljon meg
+
+A linknek minden állapotban legyen 1 pixel vastag sima fekete szegélye
+
+Alapállapotban:
+- A link legyen aláhúzva
+- A betűméret 20-as
+- A betű színe: zöld
+- A háttérszín, nincs állítva
+
+
+Látogatott link esetén:
+- A link legyen áthúzott
+- A betűméret: 20-as
+- A betű színe: fekete
+- A háttérszíne: szürke
+
+
+Ha a link felé megyünk egérrel:
+- A link ne legyen aláhúzva
+- A betűméret: 24-es
+- A betű színe: kék
+- A háttérszíne: fekete
+
+
+A link kattintásának pillanatában:
+- A link legyen aláhúzva
+- A betűméret: 24-es
+- A betű színe: piros
+- A háttérszíne: fekete
