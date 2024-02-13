@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="hev.css">
+    <script>
+        function OnButtonClick() {
+            let from = GetFromValue();
+            let to = GetToValue();
+            if (from === to) {
+                alert("Hiba: Azonos megállókat választott ki!");
+            } else {
+                alert(`Menetidő: ${Math.abs(to - from)} perc!`);
+            }
+        }
+
+        function GetFromValue() {
+            return Number(document.getElementById("from").selectedOptions[0].value);
+        }
+
+        function GetToValue() {
+            return Number(document.getElementById("to").selectedOptions[0].value);
+        }
+    </script>
     <title>Gödöllői HÉV</title>
 </head>
 
@@ -136,29 +155,6 @@
             <button onclick="OnButtonClick()">Menetidő</button>
         </div>
     </div>
-
-
 </body>
-<script>
-    function OnButtonClick() {
-        let from = GetFromValue();
-        let to = GetToValue();
-        if (from === to) {
-            alert("Hiba: Azonos megállókat választott ki!");
-        } else {
-            alert(`Menetidő: ${Math.abs(to - from)} perc!`);
-        }
-    }
-
-    function GetFromValue() {
-        return Number(document.getElementById("from").selectedOptions[0].value);
-    }
-
-    function GetToValue() {
-        return Number(document.getElementById("to").selectedOptions[0].value);
-    }
-
-
-</script>
 
 </html>
