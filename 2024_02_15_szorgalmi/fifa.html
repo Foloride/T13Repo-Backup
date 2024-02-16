@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="fifa.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="fifa-source.js"></script>
+    <script src="fifa-logic.js"></script>
+    <script src="fifa-dom.js"></script>
+
+    <title>FIFA Feladatsor</title>
+</head>
+
+<body>
+    <div class="container" data-bs-theme="dark">
+        <h1 class="text-center">FIFA Feladatsor megoldásai</h1>
+        <button type="button" class="btn btn-secondary" onclick="SolveAll()">Összes feladat megoldása</button>
+
+        <div class="question">
+            <h2>Hány csapat szerepel a ranglistán?</h2>
+            <button type="button" class="btn btn-dark my-3" onclick="F1()">Megoldás</button>
+            <p id="f1"></p>
+        </div>
+
+        <div class="question">
+            <h2>Mennyi a csapatok átlagpontszáma?</h2>
+            <button type="button" class="btn btn-dark my-3" onclick="F2()">Megoldás</button>
+            <p id="f2"></p>
+        </div>
+
+        <div class="question">
+            <h2>Melyik csapatok értek el átlagnál több pontot?</h2>
+            <button type="button" class="btn btn-dark my-3" onclick="F3()">Megoldás</button>
+            <table class="table table-striped table-hover table-bordered" id="t3">
+                <caption></caption>
+                <tr>
+                    <th>Név</th>
+                    <th>Helyezés</th>
+                    <th>Helyváltozás</th>
+                    <th>Pontszám</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="question">
+            <h2>Melyik a legtöbbet javító csapat?</h2>
+            <button type="button" class="btn btn-dark my-3" onclick="F4()">Megoldás</button>
+            <p id="f4"></p>
+        </div>
+
+        <div class="question">
+            <h2>Megtalálható-e az adott ország a ranglistán?</h2>
+            <input type="text" id="country" value="Magyarország">
+            <button type="button" class="btn btn-dark my-3" onclick="F5()">Megoldás</button>
+            <p id="f5"></p>
+        </div>
+
+        <div class="question">
+            <h2>Változás alapján való csoportosítás</h2>
+            <button type="button" class="btn btn-dark my-3" onclick="F6()">Megoldás</button>
+            <table class="table table-striped table-hover align-middle table-bordered" id="t6">
+                <caption></caption>
+                <tr>
+                    <th>Helyváltozás</th>
+                    <th>Csapatok száma</th>
+                    <th>Név</th>
+                    <th>Helyezés</th>
+                    <th>Pontszám</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
