@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="eu-source.js"></script>
+    <script src="eu-functions.js"></script>
+    <script src="eu-dom.js"></script>
+
+    <title>EU-Feladatsor megoldása DOM segítségével</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Európai Unió feladatsor</h1>
+
+        <h2>Hány tagja van az EU-nak?</h2>
+        <p id="f1"></p>
+
+        <h2>Hány ország csatlakozott adott évben?</h2>
+        <input type="number" class="form-control" id="joining-year" value="2004">
+        <button type="button" class="btn btn-dark w-100 my-3" onclick="F2()">Eredmény lekérése</button>
+        <p id="f2"></p>
+
+        <h2>Csatlakozott-e adott ország az EU-hoz?</h2>
+        <input type="text" class="form-control" id="country">
+        <button type="button" class="btn btn-dark w-100 my-3" onclick="F3()">Eredmény lekérése</button>
+        <p id="f3"></p>
+
+        <h2>Volt-e csatlakozás adott hónapban</h2>
+        <select id="month">
+            <option value="1">Január</option>
+            <option value="2">Február</option>
+            <option value="3">Március</option>
+            <option value="4">Április</option>
+            <option value="5">Május</option>
+            <option value="6">Június</option>
+            <option value="7">Július</option>
+            <option value="8">Augusztus</option>
+            <option value="9">Szeptember</option>
+            <option value="10">Október</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <button type="button" class="btn btn-dark w-100 my-3" onclick="F4()">Eredmény lekérése</button>
+        <p id="f4"></p>
+
+        <h2>Ki volt az utolsó ország aki csatlakozott?</h2>
+        <button type="button" class="btn btn-dark w-100 my-3" onclick="F5()">Eredmény lekérése</button>
+        <p id="f5"></p>
+
+        <h2>Ország statisztika, melyik évben hány ország csatlakozott?</h2>
+        <button type="button" class="btn btn-dark w-100 my-3" onclick="F6()">Eredmény lekérése</button>
+        <table id="f6" class="table table-dark table-striped table-hover table-sm table-bordered">
+            <caption></caption>
+            <tr>
+                <th>Catlakozás éve</th>
+                <th>Országok neve</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
