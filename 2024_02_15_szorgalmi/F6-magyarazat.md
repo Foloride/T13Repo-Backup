@@ -1,4 +1,4 @@
-# 6. Feladat magyarázata
+# 6. Feladat megoldásának magyarázata
 
 ## Elöszó
 A megoldás megértésében segít, ha tudjuk hogyan müködik egy `for-of`-ciklus, mivel az jelentösen egyszerüsíti a kódunkat és megkönnyíti a megértését.  
@@ -62,6 +62,9 @@ for (const [helyvaltozas, csapatok] of Object.entries(adatok)) {
 ### Kód magyarázata
 Immár fel tudjuk építeni soronként a táblázatunkat:
 ```js
+// statisztika-adatok beszerzése
+let adatok = GetTeamChangesStatistics();
+let table = document.querySelector("#t6");
 // táblázatunk következöképp épül fel:
 /*
     | Helyváltozás | Csapatok száma | Csapatnév | Csapathelyezés | Csapat pontszáma |
