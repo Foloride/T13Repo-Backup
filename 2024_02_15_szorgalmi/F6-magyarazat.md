@@ -112,6 +112,7 @@ for (const [helyvaltozas, csapatok] of Object.entries(adatok)) {
 
 ## Konkrét objektum, amivel visszatérünk a statisztika-funkciónkkal (angol)
 ```json
+{
     "0": [
         {
             "name": "Anglia",
