@@ -110,6 +110,8 @@ for (const [helyvaltozas, csapatok] of Object.entries(adatok)) {
 }
 ```
 
+Remélem ez a kis leírás segített megérteni hogy mi is történik a táblázat felépítésekor 🙂
+
 ## Konkrét objektum, amivel visszatérünk a statisztika-funkciónkkal (angol)
 ```json
 {
