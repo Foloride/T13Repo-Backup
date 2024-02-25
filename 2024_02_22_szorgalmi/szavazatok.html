@@ -46,9 +46,10 @@
 
     <div class="container p-4">
         <div id="home-page">
-            <h1 class="my-3">Virtuális Választás 2024 🍎🥩🥛🥦</h1>
+            <h1 class="my-3 text-center">Virtuális Választás 2024 🍎🥩🥛🥦</h1>
 
-            <p><b>Üdvözöljük a 2024-es Virtuális Választás hivatalos weboldalán</b>, ahol a jövő politikája a mai
+            <img src="images/politics.jpg" alt="Ábra" title="Ábra" id="cartoon">
+            <p class="mt-5"><b>Üdvözöljük a 2024-es Virtuális Választás hivatalos weboldalán</b>, ahol a jövő politikája a mai
                 döntéseinkben
                 gyökerezik. Idén négy jelentős párt állít jelölteket: a Gyümölcsevők Pártja (GYEP), a Húsevők Pártja
                 (HEP),
@@ -76,12 +77,12 @@
                 is szeretné
                 megtekinteni a pártok és jelöltek részletes szavazási adatait, kérjük, látogasson el weboldalunk
                 <a href="#" onclick="SetActiveNavElement('tasks')">Feladatok</a> szekciójába.
-            </p>
-            <p>Itt részletes
+            <br>Itt részletes
                 információkat találhat, beleértve a szavazatok
-                számát valamint a választási folyamat további fontos elemeit. </p>
-            <p>A <a href="#" onclick="SetActiveNavElement('stats')">Statisztikák</a> szekcióban pedig érdekes
-                statisztikák találhatók a választásról.</p>
+                számát valamint a választási folyamat további fontos elemeit.
+                </p>
+                <p>A <a href="#" onclick="SetActiveNavElement('stats')">Statisztikák</a> szekció egy olyan része a weboldalnak, ahol
+                    különböző érdekes adatok és statisztikák vannak összegyűjtve és megosztva</p>
             <p>Várjuk Önt, hogy felfedezze a virtuális választás izgalmas világát!
             </p>
         </div>
@@ -163,17 +164,22 @@
 
 
         <div id="stats-page">
-            <div class="container">
-                <div class="row" id="chart-container">
-                    <canvas id="chart1" class="chart col-12 col-sm-6"></canvas>
+            <p class="text-muted">Megjegyzés: Chart.js nevű csomaggal szórakoztam egy keveset, ez az első alkalom hogy kipróbáltam.
+            </p>
+            <div id="charts" class="container">
+                <div id="main-chart-container" class="mb-5 task">
+                    <h1>Szavazatok összmennyisége</h1>
+                </div>
+                <div class="row task" id="barchart-container">
+                    <h1>Pártok körzet szerinti szavazatai</h1>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div class="text-center py-2 text-muted border-top fixed-bottom bg-light">
-            <p>by Molnár Márk, Team 13</p>
+        <div class="py-2 text-muted border-top fixed-bottom bg-light">
+            <p class="text-center">by Molnár Márk, Team 13</p>
         </div>
     </footer>
 </body>

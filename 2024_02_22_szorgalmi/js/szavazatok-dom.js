@@ -21,7 +21,9 @@ function NavigateTo(pageName) {
         elem.style.display = "none";
     }
     if (pageName === "stats-page") {
-        CreateCharts();
+        LoadCharts();
+    } else {
+        DestroyCharts();
     }
 }
 
@@ -60,10 +62,14 @@ function ClearList(listID) {
 
 function FillList(listID, values) {
     let list = document.getElementById(listID);
+    let i = 0;
     for (const candidateName of values) {
-        let listElement = document.createElement("li");
-        listElement.innerHTML = candidateName;
-        list.appendChild(listElement);
+        setTimeout(() => {
+            let listElement = document.createElement("li");
+            listElement.innerHTML = candidateName;
+            list.appendChild(listElement);
+        }, i * 100);
+        i++;
     }
 }
 
@@ -85,10 +91,14 @@ function F5() {
     ClearTable("t5");
     let data = GetSumCountOfVotesPerParty();
     let table = document.getElementById("t5");
+    let i = 0;
     for (const [party, voteCount] of Object.entries(data)) {
-        let newRow = table.insertRow();
-        newRow.insertCell().innerHTML = `${Parties[party].fullName} (${party})`;
-        newRow.insertCell().innerHTML = voteCount;
+        setTimeout(() => {
+            let newRow = table.insertRow();
+            newRow.insertCell().innerHTML = `${Parties[party].fullName} (${party})`;
+            newRow.insertCell().innerHTML = voteCount;
+        }, i * 100);
+        i++;
     }
 }
 
@@ -113,9 +123,14 @@ function F7() {
     ClearTable("t7");
     let data = GetWinnersForAreas();
     let table = document.getElementById("t7");
+    let i = 0;
     for (const [area, candidate] of Object.entries(data)) {
-        let newRow = table.insertRow();
-        newRow.insertCell().innerHTML = area;
-        newRow.insertCell().innerHTML = `${candidate.name}, ${candidate.party.fullName}, ${candidate.voteCount} szavazattal`;
+        setTimeout(() => {
+            let newRow = table.insertRow();
+            newRow.insertCell().innerHTML = area;
+            newRow.insertCell().innerHTML = `${candidate.name}, ${candidate.party.fullName}, ${candidate.voteCount} szavazattal`;
+            window.scrollTo(0, document.body.scrollHeight);
+        }, i * 100);
+        i++;
     }
 }

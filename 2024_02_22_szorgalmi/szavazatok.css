@@ -27,3 +27,19 @@ nav img {
     width: 100%;
     max-width: 500px;
 }
+.chart-big {
+    width: 100%;
+    max-width: 80vw;
+}
+
+#cartoon {
+    float: right;
+    max-width: 600px;
+    width: 50%;
+    margin: 35px;
+    margin-right: unset;
+}
+
+p {
+    text-align: justify;
+}

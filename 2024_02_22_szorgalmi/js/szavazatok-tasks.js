@@ -19,19 +19,6 @@ function GetGrouping(propertyName) {
 }
 
 /**
- * @param {string} propertyName
- */
-function GetDistinct(propertyName) {
-    let result = [];
-    for (const candidate of Votes) {
-        if (!result.includes(candidate[propertyName])) {
-            result.push(candidate[propertyName]);
-        }
-    }
-    return result;
-}
-
-/**
  * @param {string} party
  */
 function GetGroupedCandidates(party) {
