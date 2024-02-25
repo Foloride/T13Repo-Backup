@@ -1,0 +1,65 @@
+[
+    {
+        "area": 1,
+        "voteCount": 120,
+        "name": " Alma Dalma",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    },
+    {
+        "area": 2,
+        "voteCount": 59,
+        "name": "Barack Barna",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    },
+    {
+        "area": 6,
+        "voteCount": 73,
+        "name": "Birs Helga",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    },
+    {
+        "area": 4,
+        "voteCount": 77,
+        "name": "Kajszi Kolos",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    },
+    {
+        "area": 5,
+        "voteCount": 67,
+        "name": "Meggy Csilla",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    },
+    {
+        "area": 8,
+        "voteCount": 288,
+        "name": " Narancs Edmond",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    },
+    {
+        "area": 3,
+        "voteCount": 87,
+        "name": "Szilva Szilvia",
+        "party": {
+            "shortName": "GYEP",
+            "fullName": "Gyümölcsevők Pártja"
+        }
+    }
+]

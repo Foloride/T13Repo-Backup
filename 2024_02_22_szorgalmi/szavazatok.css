@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(249, 246, 238);
+}
+
+.container {
+    margin: 50px auto;
+}
+
+nav img {
+    max-height: 35px;
+}
+
+.task {
+    margin: 20px;
+    border-top: 2px solid rgb(0, 44, 73);
+    border-left: 2px solid rgb(0, 44, 73);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(0, 44, 73);
+}
+
+.form-control {
+    margin: 10px 0px;
+}
+
+.chart {
+    width: 100%;
+    max-width: 500px;
+}
