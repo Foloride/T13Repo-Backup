@@ -16,7 +16,7 @@ function ReloadCharts() {
     chart1 = CreateDonutChart();
     let i = 0;
     for (const value of Object.values(Parties)) {
-        charts2[i - 1] = CreateBarChart("bar-chart-" + i, value.shortName);
+        charts2[i] = CreateBarChart("bar-chart-" + i, value.shortName);
         i++;
     }
 }
