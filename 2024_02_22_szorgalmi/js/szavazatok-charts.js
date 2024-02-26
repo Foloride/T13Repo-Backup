@@ -1,11 +1,11 @@
 // https://www.w3schools.com/js/js_graphics_chartjs.asp
 // https://www.chartjs.org/docs/latest/developers/api.html
 
-let chart1 = null;
-let charts2 = [];
+let donutChart = null;
+let barCharts = [];
 
 function LoadCharts() {
-    if (chart1 === null) {
+    if (donutChart === null) {
         CreateCharts();
     } else {
         ReloadCharts();
@@ -13,17 +13,17 @@ function LoadCharts() {
 }
 
 function ReloadCharts() {
-    chart1 = CreateDonutChart();
+    donutChart = CreateDonutChart();
     let i = 0;
     for (const value of Object.values(Parties)) {
-        charts2[i] = CreateBarChart("bar-chart-" + i, value.shortName);
+        barCharts[i] = CreateBarChart("bar-chart-" + i, value.shortName);
         i++;
     }
 }
 
 function DestroyCharts() {
-    chart1?.destroy();
-    for (const chart of charts2) {
+    donutChart?.destroy();
+    for (const chart of barCharts) {
         chart.destroy();
     }
 }
@@ -33,14 +33,14 @@ function CreateCharts() {
     newChart1.id = "donut-chart";
     newChart1.classList.add("chart-big", "col-12");
     document.getElementById("main-chart-container").appendChild(newChart1);
-    chart1 = CreateDonutChart();
+    donutChart = CreateDonutChart();
     let i = 0;
     for (const value of Object.values(Parties)) {
         let newChart = document.createElement("canvas");
         newChart.id = "bar-chart-" + i;
         newChart.classList.add("chart", "col-12", "col-sm-6");
         document.getElementById("barchart-container").appendChild(newChart);
-        charts2.push(CreateBarChart("bar-chart-" + i, value.shortName));
+        barCharts.push(CreateBarChart("bar-chart-" + i, value.shortName));
         i++;
     }
 }
