@@ -33,9 +33,9 @@ function PopulatePartiesSelect() {
     dummyElement.value = -1;
     dummyElement.innerHTML = "-- Kérem válasszon --";
     selectElement.appendChild(dummyElement);
-    for (const [shortName, party] of Object.entries(Parties)) {
+    for (const party of Object.values(Parties)) {
         let optionElement = document.createElement("option");
-        optionElement.value = shortName;
+        optionElement.value = party.shortName;
         optionElement.innerHTML = party.fullName;
         selectElement.appendChild(optionElement);
     }
