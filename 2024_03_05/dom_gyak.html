@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+
+    <style>
+        #negyzet {
+            background-color: black;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+
+        #cat {
+            height: 200px;
+        }
+
+        .fadeOut {
+            animation: fadeOut 5s 0s 1 forwards;
+        }
+
+        .fadeIn {
+            animation: fadeIn 5s 0s 1 forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <script>
+        window.onload = () => {
+            cat.classList.add("fadeIn");
+        }
+
+        function MegszamolF1() {
+            karakterszam.innerHTML = f1.value.length;
+        }
+
+        function KirajzolF2() {
+            let x = f2x.value;
+            let y = f2y.value;
+            negyzet.style.display = "block";
+            negyzet.style.left = x + "px";
+            negyzet.style.top = y + "px";
+        }
+
+        function BujocskaF3() {
+            if (cat.classList.contains("fadeIn")) {
+                cat.classList.remove("fadeIn");
+                cat.classList.add("fadeOut");
+            } else {
+                cat.classList.remove("fadeOut");
+                cat.classList.add("fadeIn");
+            }
+        }
+
+        function Ellenorzes() {
+            hibauzenet.style.color = "red";
+            let re = /^[0-9a-z\.-]+@([0-9a-z-]+\.)+[a-z]{2,4}$/i;
+
+            if (email.value == "" && emailMegerosit.value == "") {
+                hibauzenet.innerHTML = "Nincs kitöltve egyik mező sem!";
+            } else if (email.value == "" && emailMegerosit.value != "") {
+                hibauzenet.innerHTML = "Nincs kitöltve az e-mail mező!";
+            } else if (email.value != "" && emailMegerosit.value == "") {
+                hibauzenet.innerHTML = "Nincs kitöltve az e-mail megerősítése mező!";
+            } else if (!re.test(email.value)) {
+                hibauzenet.innerHTML = "Nem megfelelő az e-mail cím formátuma!";
+            } else if (email.value != emailMegerosit.value) {
+                hibauzenet.innerHTML = "A két mező tartalma nem egyezik!";
+            } else {
+                hibauzenet.style.color = "green";
+                hibauzenet.innerHTML = "Adatok rögzítése sikeres!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>1. Feladat</h1>
+    <input id="f1" type="text" oninput="MegszamolF1()">
+    <span id="karakterszam">0</span>
+    <hr>
+
+    <h1>2. Feladat</h1>
+    x<input id="f2x" type="number" value="100">
+    y<input id="f2y" type="number" value="100">
+    <button type="button" onclick="KirajzolF2()">Kirajzol</button>
+    <div id="negyzet"></div>
+    <hr>
+
+    <h1>3. Feladat</h1>
+    <button type="button" onclick="BujocskaF3()">Bújócska!</button>
+    <img id="cat" src="hidingCat.jpg" alt="cat">
+    <hr>
+
+    <h1>4. Feladat</h1>
+    <input id="email" type="text" placeholder="E-mail cím">
+    <input id="emailMegerosit" type="text" placeholder="E-mail cím megerősítése">
+    <p id="hibauzenet"></p>
+    <button type="button" onclick="Ellenorzes()">Ellenörzés</button>
+</body>
+
+</html>
