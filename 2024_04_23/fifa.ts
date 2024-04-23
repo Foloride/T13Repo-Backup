@@ -51,7 +51,7 @@ function F2(): void {
 }
 
 function F3(): void {
-    let teams = GetTeamsAboveAverage();
+    let teams: TeamData[] = GetTeamsAboveAverage();
     let table: HTMLTableElement = document.querySelector("#t3")!;
     for (const team of teams) {
         let newRow = table.insertRow();
@@ -97,9 +97,9 @@ function F6(): void {
         teamsCountCell.setAttribute("rowspan", teams.length);
     }
 }
-const Teams: TeamData[] = GetTeamDataObject();
+const Teams: TeamData[] = GetTeamDataArray();
 
-function GetTeamDataObject(): TeamData[] {
+function GetTeamDataArray(): TeamData[] {
     let data: TeamData[] = [];
     for (const line of csapatAdat) {
         let lineData = line.split(";");
