@@ -144,10 +144,8 @@ function GetTeamChangesStatistics(): object {
     for (const team of Teams) {
         if (result[team.placeChange] === undefined) {
             result[team.placeChange] = [team];
-        } else {
-            if (!result[team.placeChange].includes(team)) {
-                result[team.placeChange].push(team);
-            }
+        } else if (!result[team.placeChange].includes(team)) {
+            result[team.placeChange].push(team);
         }
     }
     return result;
