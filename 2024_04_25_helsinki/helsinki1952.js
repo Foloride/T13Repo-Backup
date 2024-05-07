@@ -66,7 +66,7 @@ let helsinki = [
 ];
 const places = GenerateData();
 function GenerateData() {
-    return helsinki.map((value, index, array) => {
+    return helsinki.map(value => {
         let columns = value.split(" ");
         return {
             place: Number(columns[0]),
@@ -93,7 +93,7 @@ function GetMedalsData(data) {
     };
 }
 function GetPlaceDataForPlace(data, place) {
-    return data.filter((value) => value.place === place);
+    return data.filter(value => value.place === place);
 }
 function GetSumOfPoints() {
     let sum = 0;

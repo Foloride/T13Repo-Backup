@@ -81,7 +81,7 @@ interface MedalData {
 const places: PlaceData[] = GenerateData();
 
 function GenerateData(): PlaceData[] {
-    return helsinki.map((value, index, array) => {
+    return helsinki.map(value => {
         let columns: string[] = value.split(" ");
         return {
             place: Number(columns[0]),
@@ -112,7 +112,7 @@ function GetMedalsData(data: PlaceData[]): MedalData {
 }
 
 function GetPlaceDataForPlace(data: PlaceData[], place: number): PlaceData[] {
-    return data.filter((value) => value.place === place);
+    return data.filter(value => value.place === place);
 }
 
 function GetSumOfPoints(): number {
