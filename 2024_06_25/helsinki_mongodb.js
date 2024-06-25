@@ -71,7 +71,7 @@ eredmenyek = [
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const url = "";
+const url = "mongodb+srv://markmolnar77:Papirz.sebkend0@cluster0.l1fv90x.mongodb.net/?appName=Cluster0";
 const client = new MongoClient(url, {
     serverApi: {
         version: ServerApiVersion.v1,
@@ -145,7 +145,7 @@ async function getMaxTeamSizeData() {
 
     try {
         return collection.find()
-            .sort({ teamSize: 1 })
+            .sort({ teamSize: -1 })
             .limit(1)
             .toArray();
 
