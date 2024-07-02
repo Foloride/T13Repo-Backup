@@ -1,0 +1,12 @@
+<h1>Vizsgafeladat</h1>
+<p>Vizsgálandó szám</p>
+<input type="number" id="numberInput" class="form-control" [(ngModel)]="currentInput">
+<button type="button" class="btn btn-primary w-100 my-3" (click)="performCheck()">Eredmény lekérése</button>
+
+<p>{{message}}</p>
+
+<ul>
+    <li *ngFor="let m of results">
+        {{m}}
+    </li>
+</ul>
