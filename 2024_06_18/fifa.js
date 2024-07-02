@@ -27,7 +27,11 @@ const fifa = [
 ];
 
 const MongoClient = require("mongodb").MongoClient;
+<<<<<<< HEAD
 const url = "mongodb+srv://markmolnar77:@cluster0.l1fv90x.mongodb.net/";
+=======
+const url = "";
+>>>>>>> 400be55ae486af6e6614d590a78ff3a020e7c67f
 
 async function initData() {
     const client = await MongoClient.connect(url);
@@ -169,4 +173,8 @@ async function doActions() {
 }
 
 
+<<<<<<< HEAD
 doActions();
+=======
+doActions();
+>>>>>>> 400be55ae486af6e6614d590a78ff3a020e7c67f
